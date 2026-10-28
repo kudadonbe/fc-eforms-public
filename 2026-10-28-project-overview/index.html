@@ -43,322 +43,191 @@ aside { display:none; }
 </head>
 <body>
 <div id="stage">
-<section id="cover" data-transition="fade" style="background:#3c3950;color:#f1f2f4;font-family:'Open Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between">
-<div style="display:flex;flex-direction:column;gap:24px">
-<div style="display:flex;justify-content:space-between;align-items:center"><p style="font-size:28px;letter-spacing:4px;text-transform:uppercase;color:#4dd0e1;font-weight:600">Family Court of the Maldives · ICT</p><p style="font-family:'Dhanbumaa Bold', 'Dhanbumaa', 'MV Boli', serif;font-size:44px;color:#4dd0e1;line-height:1.3">ފެމިލީ ކޯޓު</p></div>
-<h1 style="font-family:'Open Sans', Arial, sans-serif;font-size:160px;font-weight:800;line-height:1">eForms</h1>
-<p style="font-size:44px;line-height:1.3;color:#c5cad6;width:1200px">Filing Family Court forms online. The project, the architecture, the technology, and why the prototype is being rebuilt.</p>
+<section id="cover" data-transition="fade" style="background:#3c3950;color:#f1f2f4;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px;display:flex;flex-direction:column;justify-content:space-between">
+<div style="display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;justify-content:space-between;align-items:center"><p style="font-size:30px;letter-spacing:4px;text-transform:uppercase;color:#4dd0e1;font-weight:600">Family Court of the Maldives · ICT</p><p style="font-family:'Dhanbumaa Bold', 'Dhanbumaa', 'MV Boli', serif;font-size:48px;color:#4dd0e1;line-height:1.3">ފެމިލީ ކޯޓު</p></div>
+<h1 style="font-family:'Open Sans', Arial, sans-serif;font-size:168px;font-weight:800;line-height:1">eForms</h1>
+<p style="font-size:46px;line-height:1.3;color:#c5cad6;width:1300px">Filing Family Court forms online. The project, the architecture, the technology, and why the prototype is being rebuilt.</p>
 </div>
 <div style="display:flex;justify-content:space-between;align-items:end">
 <div style="display:flex;flex-direction:column;gap:8px">
-<p style="font-size:32px;font-weight:600">Hussain Shareef</p>
-<p style="font-family:'Dhanbumaa', 'MV Boli', serif;font-size:34px;color:#c5cad6;line-height:1.3">ޙުސައިން ޝަރީފް</p>
-<p style="font-size:28px;color:#c5cad6">Project lead, eForms · Briefing for the Chief Judge</p>
+<p style="font-size:36px;font-weight:600">Hussain Shareef</p>
+<p style="font-family:'Dhanbumaa', 'MV Boli', serif;font-size:36px;color:#c5cad6;line-height:1.3">ޙުސައިން ޝަރީފް</p>
+<p style="font-size:30px;color:#c5cad6">Project lead, eForms · Briefing for the Chief Judge</p>
 </div>
-<p style="font-size:28px;color:#c5cad6">28 October 2026</p>
+<p style="font-size:30px;color:#c5cad6">28 October 2026</p>
 </div>
 <aside>Welcome. In the next fifteen minutes: who I am, what we are building, how it is put together, what technology we will use and why, and why we are rebuilding rather than hardening the prototype.</aside>
 </section>
-<section id="intro" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
-<div style="display:flex;justify-content:space-between;align-items:end">
-<div style="display:flex;flex-direction:column;gap:10px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Who is presenting</p>
-<div style="display:flex;gap:40px;align-items:baseline"><h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:72px;font-weight:800;line-height:1.1">Hussain Shareef</h2><p style="font-family:'Dhanbumaa Bold', 'Dhanbumaa', 'MV Boli', serif;font-size:52px;color:#00838f;line-height:1.2">ޙުސައިން ޝަރީފް</p></div>
+<section id="intro" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Who is presenting</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Hussain Shareef</h2>
+<p style="font-family:'Dhanbumaa Bold', 'Dhanbumaa', 'MV Boli', serif;font-size:52px;color:#00838f;line-height:1.2">ޙުސައިން ޝަރީފް</p>
 <p style="font-size:30px;color:#5f727f">Computer Technician, ICT Section, Family Court · Project lead, eForms</p>
 </div>
-<div style="display:flex;flex-direction:column;gap:4px;align-items:end">
-<p style="font-size:24px;color:#5f727f;text-align:right">github.com/kudadonbe · since 2016 · 30 public repositories</p>
-<p style="font-size:24px;color:#5f727f;text-align:right">Go · TypeScript · Python · Vue · PHP · PowerShell · Office VBA</p>
+<div style="display:flex;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:36px;border:1px solid #dfe5e8;border-radius:16px;min-width:0">
+<div style="display:flex;gap:16px;align-items:center"><x-icon name="Lock" style="width:48px;height:48px;color:#00838f"></x-icon><h3 style="font-size:36px;font-weight:600;color:#3c3950">Madhoshi</h3></div><p style="font-size:28px;line-height:1.4;color:#5f727f">The court’s intranet application, in production at version 4.7.7 after 214 commits. One sign-in, per-user grants, audit trail; certificates and vouchers as modules. Go, one binary.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:36px;border:1px solid #dfe5e8;border-radius:16px;min-width:0">
+<div style="display:flex;gap:16px;align-items:center"><x-icon name="Globe" style="width:48px;height:48px;color:#00838f"></x-icon><h3 style="font-size:36px;font-weight:600;color:#3c3950">Aailaa / AQD</h3></div><p style="font-size:28px;line-height:1.4;color:#5f727f">The court’s digital service platform: call centre, staff directory, events, login and access management. Next.js and Firebase.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:36px;border:1px solid #dfe5e8;border-radius:16px;min-width:0">
+<div style="display:flex;gap:16px;align-items:center"><x-icon name="GraduationCap" style="width:48px;height:48px;color:#00838f"></x-icon><h3 style="font-size:36px;font-weight:600;color:#3c3950">MAP certificates</h3></div><p style="font-size:28px;line-height:1.4;color:#5f727f">Marriage Awareness Programme certificates in Dhivehi, generated and emailed automatically. Where Madhoshi began.</p>
 </div>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:28px 32px;border:1px solid #dfe5e8;border-radius:16px">
-<div style="display:flex;gap:14px;align-items:center"><x-icon name="Lock" style="width:40px;height:40px;color:#00838f"></x-icon><h3 style="font-size:32px;font-weight:600">Madhoshi</h3></div>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">The court’s intranet application, in production at version 4.7.7 after 214 commits. One sign-in, per-user grants, audit trail; certificates and payment vouchers as modules. Go, one binary.</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:28px 32px;border:1px solid #dfe5e8;border-radius:16px">
-<div style="display:flex;gap:14px;align-items:center"><x-icon name="Globe" style="width:40px;height:40px;color:#00838f"></x-icon><h3 style="font-size:32px;font-weight:600">Aailaa / AQD</h3></div>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">The court’s digital service platform: call centre, staff directory, events, login and access management. Next.js and Firebase.</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:28px 32px;border:1px solid #dfe5e8;border-radius:16px">
-<div style="display:flex;gap:14px;align-items:center"><x-icon name="GraduationCap" style="width:40px;height:40px;color:#00838f"></x-icon><h3 style="font-size:32px;font-weight:600">MAP certificates</h3></div>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">Marriage Awareness Programme certificates generated in Dhivehi and emailed automatically. Where Madhoshi began; now one of its modules.</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:28px 32px;border:1px solid #dfe5e8;border-radius:16px">
-<div style="display:flex;gap:14px;align-items:center"><x-icon name="Clock" style="width:40px;height:40px;color:#580f41"></x-icon><h3 style="font-size:32px;font-weight:600">iClock sync</h3></div>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">Attendance logs from the ZKTeco clocks synced into a database automatically. Python.</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:28px 32px;border:1px solid #dfe5e8;border-radius:16px">
-<div style="display:flex;gap:14px;align-items:center"><x-icon name="Database" style="width:40px;height:40px;color:#580f41"></x-icon><h3 style="font-size:32px;font-weight:600">KD-Server</h3></div>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">One record of truth per person, organisation or asset, shared across apps without duplication. Go and MongoDB. The idea behind fc-api.</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:28px 32px;border:1px solid #dfe5e8;border-radius:16px">
-<div style="display:flex;gap:14px;align-items:center"><x-icon name="Book" style="width:40px;height:40px;color:#580f41"></x-icon><h3 style="font-size:32px;font-weight:600">Teaching</h3></div>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">CodeTheWeb, a 14-session web curriculum from scratch. FcRefresher, training sessions and guides for the court’s ICT staff.</p>
-</div>
-</div>
-<p style="font-size:24px;color:#5f727f">Earlier: Office automation for finance (stock counts, safe reports), a COVID-era island status tracker, and Dhivehi font and document tooling.</p>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 2</p>
+<p style="font-size:26px;line-height:1.4;color:#5f727f">Also: iClock attendance sync, KD-Server (one record of truth per person or asset, the idea behind fc-api), CodeTheWeb and FcRefresher training. github.com/kudadonbe, 30 public repositories since 2016. Go · TypeScript · Python · Vue · PHP.</p>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 2</p>
 <aside>Short on me. Most of what I build is for the court and already in daily use: Madhoshi runs the intranet, Aailaa is the public platform, the certificate system is where it started. KD-Server is the same one-truth idea that fc-api brings to the court’s data. eForms is the piece the public touches.</aside>
 </section>
-<section id="goal" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:space-between">
-<div style="display:flex;flex-direction:column;gap:24px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">The project in one sentence</p>
-<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.2;width:1600px">Citizens, or anyone helping them, file Family Court forms online. Staff handle the filings inside the court in Madhoshi. The citizen follows the status by phone.</h2>
-</div>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-top:4px solid #00838f;padding:24px 0 0 0">
-<p style="font-family:'Open Sans', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1">Tier 1</p>
-<p style="font-size:26px;line-height:1.4;color:#5f727f">Under the MDS Secure Software Development Standard: public-facing and personal data, some of it safety-critical.</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-top:4px solid #00838f;padding:24px 0 0 0">
-<p style="font-family:'Open Sans', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1">17 forms</p>
-<p style="font-size:26px;line-height:1.4;color:#5f727f">The Fm-C-B series. Slice 1 is one form end to end. The rest follow as reviewed schemas.</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-top:4px solid #580f41;padding:24px 0 0 0">
-<p style="font-family:'Open Sans', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1">Pilot</p>
-<p style="font-size:26px;line-height:1.4;color:#5f727f">Test data and invited testers only. Standards followed voluntarily. Real citizen data only after Gate 1 is approved.</p>
-</div>
-</div>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 3</p>
-<aside>Three facts to anchor everything else. Tier 1 sets the bar for security evidence. Seventeen forms exist in the prototype; we ship one first. And we are in a testing pilot: no real citizen data until Gate 1 is approved and MDS has answered the hosting question.</aside>
-</section>
-<section id="arch" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<section id="goal" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;justify-content:space-between">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Architecture</p>
-<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Sealed on the way in. Pulled by the court. Opened only in Madhoshi.</h2>
-</div>
-<div style="display:flex;gap:16px">
-<div style="width:760px;display:flex;flex-direction:column;gap:8px">
-<p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#580f41;font-weight:600;text-align:center">Internet</p>
-<hr style="border-top:3px solid #580f41;width:760px">
-</div>
-<div style="width:112px"></div>
-<div style="width:776px;display:flex;flex-direction:column;gap:8px">
-<p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#00838f;font-weight:600;text-align:center">Court network · no inbound route</p>
-<hr style="border-top:3px solid #00bcd4;width:776px">
-</div>
-</div>
-<div style="display:flex;gap:16px;align-items:center">
-<div style="width:320px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:32px;border:1px solid #dfe5e8;border-radius:16px">
-<x-icon name="Users" style="width:44px;height:44px;color:#580f41"></x-icon>
-<h3 style="font-size:32px;font-weight:600">Public</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">Citizen, law firm, relative. Any browser. No sign-in.</p>
-</div>
-<x-shape kind="arrow-right" style="width:96px;height:48px;background:#580f41"></x-shape>
-<div style="width:328px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:32px;border:2px solid #580f41;border-radius:16px">
-<x-icon name="Lock" style="width:44px;height:44px;color:#580f41"></x-icon>
-<h3 style="font-size:32px;font-weight:600">fc-eforms · VPS</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">Web front end and backend. Seals every filing with the court’s public key. Cannot read what it stores.</p>
-</div>
-<div style="width:112px;display:flex;flex-direction:column;gap:8px;align-items:center">
-<x-shape kind="arrow-right" style="width:96px;height:48px;background:#00bcd4"></x-shape>
-<p style="font-size:24px;line-height:1.2;color:#00838f;text-align:center;font-weight:600;width:112px">pulled</p>
-</div>
-<div style="width:328px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:32px;border:1px solid #dfe5e8;border-radius:16px">
-<x-icon name="Database" style="width:44px;height:44px;color:#00838f"></x-icon>
-<h3 style="font-size:32px;font-weight:600">fc-api · FC server</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">Polls the VPS every few seconds, outbound only. Stores filings still sealed. One API over all court data.</p>
-</div>
-<x-shape kind="arrow-right" style="width:96px;height:48px;background:#00bcd4"></x-shape>
-<div style="width:328px;display:flex;flex-direction:column;gap:12px;background:#3c3950;color:#f1f2f4;padding:32px;border-radius:16px">
-<x-icon name="Key" style="width:44px;height:44px;color:#4dd0e1"></x-icon>
-<h3 style="font-size:32px;font-weight:600">Madhoshi</h3>
-<p style="font-size:24px;line-height:1.35;color:#c5cad6">Holds the private key. The only place a filing is decrypted. Staff inbox, status, audit.</p>
-</div>
-</div>
-<p style="font-size:28px;line-height:1.4;color:#5f727f;width:1664px">Status travels back the same way: Madhoshi to fc-api to the VPS to the citizen’s phone. Nothing on the internet ever opens a connection into the court.</p>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 4</p>
-<aside>Three components. The public part lives on a small VPS and knows nothing about the court. fc-api sits on a court server and pulls filings out, polling every few seconds; the connection always starts inside the court. Madhoshi holds the private key, so a full copy of the VPS, disk and backups, reveals no filing content.</aside>
-</section>
-<section id="rules" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Architecture</p>
-<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Four rules behind the picture</h2>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
-<div style="display:flex;gap:28px;background:#FFFFFF;padding:40px;border:1px solid #dfe5e8;border-radius:16px">
-<x-icon name="Lock" style="width:56px;height:56px;color:#00838f"></x-icon>
-<div style="flex:1;display:flex;flex-direction:column;gap:10px">
-<h3 style="font-size:34px;font-weight:600">Outbound only</h3>
-<p style="font-size:26px;line-height:1.4;color:#5f727f">fc-api calls out to the VPS. The VPS never calls in. The whole class of “attacker reaches the court network through the integration” goes away.</p>
-</div>
-</div>
-<div style="display:flex;gap:28px;background:#FFFFFF;padding:40px;border:1px solid #dfe5e8;border-radius:16px">
-<x-icon name="Key" style="width:56px;height:56px;color:#00838f"></x-icon>
-<div style="flex:1;display:flex;flex-direction:column;gap:10px">
-<h3 style="font-size:34px;font-weight:600">Sealed at rest</h3>
-<p style="font-size:26px;line-height:1.4;color:#5f727f">Each filing is encrypted with the court’s public key the moment it is validated. In clear on the VPS: reference, form code, hashed phone, status, times. Nothing else.</p>
-</div>
-</div>
-<div style="display:flex;gap:28px;background:#FFFFFF;padding:40px;border:1px solid #dfe5e8;border-radius:16px">
-<x-icon name="CheckCircle" style="width:56px;height:56px;color:#00838f"></x-icon>
-<div style="flex:1;display:flex;flex-direction:column;gap:10px">
-<h3 style="font-size:34px;font-weight:600">Two-step acknowledgement</h3>
-<p style="font-size:26px;line-height:1.4;color:#5f727f">fc-api confirms to the VPS once it holds a sealed copy; the VPS deletes. Madhoshi confirms to fc-api once decrypted and stored; fc-api drops its copy. Nothing is kept longer than needed.</p>
-</div>
-</div>
-<div style="display:flex;gap:28px;background:#FFFFFF;padding:40px;border:1px solid #dfe5e8;border-radius:16px">
-<x-icon name="Book" style="width:56px;height:56px;color:#00838f"></x-icon>
-<div style="flex:1;display:flex;flex-direction:column;gap:10px">
-<h3 style="font-size:34px;font-weight:600">Forms are data</h3>
-<p style="font-size:26px;line-height:1.4;color:#5f727f">One versioned schema per form drives the web form, the validation and the display in Madhoshi. Court reviewers sign off each version. Nobody re-implements a form by hand.</p>
-</div>
-</div>
-</div>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 5</p>
-<aside>If you remember four things from the architecture, these are the four. Each one answers a risk on the register: outbound-only answers R02, sealing answers R01, the two-step acknowledgement keeps the public server nearly empty, and forms as data keeps the wording under the court’s control.</aside>
-</section>
-<section id="filing" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">How a citizen files · phase 1</p>
-<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">No sign-in. A form key and a verified phone.</h2>
-</div>
-<div style="display:flex;gap:0;align-items:start">
-<div style="width:264px;display:flex;flex-direction:column;gap:14px">
-<div style="width:64px;height:64px;border-radius:50%;background:#00838f;display:flex;align-items:center;justify-content:center"><p style="font-size:30px;font-weight:600;color:#f1f2f4">1</p></div>
-<h3 style="font-size:30px;font-weight:600">Open a form</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f;width:232px">Anyone: the applicant, a law firm, a relative.</p>
-</div>
-<div style="width:16px"></div>
-<div style="width:264px;display:flex;flex-direction:column;gap:14px">
-<div style="width:64px;height:64px;border-radius:50%;background:#00838f;display:flex;align-items:center;justify-content:center"><p style="font-size:30px;font-weight:600;color:#f1f2f4">2</p></div>
-<h3 style="font-size:30px;font-weight:600">Form key issued</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f;width:232px">A random reference, like VK-UV9WB2PQ. The only handle for the filing.</p>
-</div>
-<div style="width:16px"></div>
-<div style="width:264px;display:flex;flex-direction:column;gap:14px">
-<div style="width:64px;height:64px;border-radius:50%;background:#00838f;display:flex;align-items:center;justify-content:center"><p style="font-size:30px;font-weight:600;color:#f1f2f4">3</p></div>
-<h3 style="font-size:30px;font-weight:600">Phone verified</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f;width:232px">Six-digit SMS code to the contact number. Five tries, five minutes.</p>
-</div>
-<div style="width:16px"></div>
-<div style="width:264px;display:flex;flex-direction:column;gap:14px">
-<div style="width:64px;height:64px;border-radius:50%;background:#00838f;display:flex;align-items:center;justify-content:center"><p style="font-size:30px;font-weight:600;color:#f1f2f4">4</p></div>
-<h3 style="font-size:30px;font-weight:600">Fill and attach</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f;width:232px">Dhivehi and English. Drafts stay in the browser, never on the server.</p>
-</div>
-<div style="width:16px"></div>
-<div style="width:264px;display:flex;flex-direction:column;gap:14px">
-<div style="width:64px;height:64px;border-radius:50%;background:#580f41;display:flex;align-items:center;justify-content:center"><p style="font-size:30px;font-weight:600;color:#f1f2f4">5</p></div>
-<h3 style="font-size:30px;font-weight:600">Submit, sealed</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f;width:232px">Validated against the schema, then encrypted with the court’s public key.</p>
-</div>
-<div style="width:16px"></div>
-<div style="width:264px;display:flex;flex-direction:column;gap:14px">
-<div style="width:64px;height:64px;border-radius:50%;background:#3c3950;display:flex;align-items:center;justify-content:center"><p style="font-size:30px;font-weight:600;color:#f1f2f4">6</p></div>
-<h3 style="font-size:30px;font-weight:600">Follow the status</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f;width:232px">Form key plus a fresh code to the same phone. The reference alone opens nothing.</p>
-</div>
-</div>
-<div style="display:flex;gap:24px;background:#FFFFFF;padding:32px 40px;border-left:6px solid #580f41;border-radius:0 16px 16px 0">
-<p style="font-size:28px;line-height:1.4;color:#3c3950">The phone proves a contact, not the applicant. <b>Staff verify the applicant in Madhoshi</b> from the ID card image, selfie and signature inside the sealed filing. eFaas comes in a later release.</p>
-</div>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 6</p>
-<aside>This is the correction from earlier drafts: no eFaas in phase 1, no accounts. The prototype already works this way, with a reference number and a phone number. We keep that model and close its one weakness: the status page will need the code as well as the reference.</aside>
-</section>
-<section id="prototype" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Why rebuild</p>
-<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">The prototype proved the forms. It cannot be the product.</h2>
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">The project in one sentence</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:60px;font-weight:800;line-height:1.1;width:1600px">Citizens, or anyone helping them, file Family Court forms online. Staff handle the filings inside the court in Madhoshi. The citizen follows the status by phone.</h2>
 </div>
 <div style="display:flex;gap:40px">
-<div style="width:560px;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:40px;border:1px solid #dfe5e8;border-radius:16px">
-<h3 style="font-size:30px;font-weight:600;color:#00838f">What the prototype gave us</h3>
-<ul style="font-size:26px;line-height:1.5;color:#5f727f;padding:0 0 0 32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;border-top:4px solid #00838f;padding:24px 0 0 0;min-width:0"><p style="font-family:'Open Sans', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1">Tier 1</p><p style="font-size:28px;line-height:1.4;color:#5f727f">Under the MDS Secure Software Development Standard: public-facing and personal data, some of it safety-critical.</p></div><div style="flex:1;display:flex;flex-direction:column;gap:10px;border-top:4px solid #00838f;padding:24px 0 0 0;min-width:0"><p style="font-family:'Open Sans', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1">17 forms</p><p style="font-size:28px;line-height:1.4;color:#5f727f">The Fm-C-B series. Slice 1 is one form end to end. The rest follow as reviewed schemas.</p></div><div style="flex:1;display:flex;flex-direction:column;gap:10px;border-top:4px solid #580f41;padding:24px 0 0 0;min-width:0"><p style="font-family:'Open Sans', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1">Pilot</p><p style="font-size:28px;line-height:1.4;color:#5f727f">Test data and invited testers only. Standards followed voluntarily. Real citizen data only after Gate 1 is approved.</p></div>
+</div>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 3</p>
+<aside>Three facts to anchor everything else. Tier 1 sets the bar for security evidence. Seventeen forms exist in the prototype; we ship one first. And we are in a testing pilot: no real citizen data until Gate 1 is approved and MDS has answered the hosting question.</aside>
+</section>
+<section id="arch" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Architecture</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Sealed on the way in. Pulled by the court. Opened only in Madhoshi.</h2>
+</div>
+<div style="display:flex;gap:20px;align-items:center">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;color:#3c3950;padding:30px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><x-icon name="Users" style="width:48px;height:48px;color:#580f41"></x-icon><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#580f41;font-weight:600">Internet</p><h3 style="font-size:34px;font-weight:600">Public</h3><p style="font-size:26px;line-height:1.35;color:#5f727f">Citizen, law firm, relative. Any browser. No sign-in.</p></div><x-shape kind="arrow-right" style="width:80px;height:40px;background:#580f41"></x-shape><div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;color:#3c3950;padding:30px;border:2px solid #580f41;border-radius:16px;min-width:0"><x-icon name="Lock" style="width:48px;height:48px;color:#580f41"></x-icon><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#580f41;font-weight:600">Internet · VPS</p><h3 style="font-size:34px;font-weight:600">fc-eforms</h3><p style="font-size:26px;line-height:1.35;color:#5f727f">Seals every filing with the court’s public key. Cannot read what it stores.</p></div><x-shape kind="arrow-right" style="width:80px;height:40px;background:#00bcd4"></x-shape><div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;color:#3c3950;padding:30px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><x-icon name="Database" style="width:48px;height:48px;color:#00838f"></x-icon><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#00838f;font-weight:600">Court network</p><h3 style="font-size:34px;font-weight:600">fc-api</h3><p style="font-size:26px;line-height:1.35;color:#5f727f">Polls the VPS, outbound only. Stores filings still sealed. One API over all court data.</p></div><x-shape kind="arrow-right" style="width:80px;height:40px;background:#00bcd4"></x-shape><div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#3c3950;color:#f1f2f4;padding:30px;border:1px solid #3c3950;border-radius:16px;min-width:0"><x-icon name="Key" style="width:48px;height:48px;color:#4dd0e1"></x-icon><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#4dd0e1;font-weight:600">Court network</p><h3 style="font-size:34px;font-weight:600">Madhoshi</h3><p style="font-size:26px;line-height:1.35;color:#c5cad6">Holds the private key. The only place a filing is decrypted. Staff inbox, status, audit.</p></div>
+</div>
+<p style="font-size:30px;line-height:1.4;color:#5f727f">Status travels back the same way. Nothing on the internet ever opens a connection into the court.</p>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 4</p>
+<aside>Three components. The public part lives on a small VPS and knows nothing about the court. fc-api sits on a court server and pulls filings out, polling every few seconds; the connection always starts inside the court. Madhoshi holds the private key, so a full copy of the VPS, disk and backups, reveals no filing content.</aside>
+</section>
+<section id="rules" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Architecture</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Four rules behind the picture</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+<div style="display:flex;gap:24px;background:#FFFFFF;padding:34px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><x-icon name="Lock" style="width:52px;height:52px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column;gap:10px;min-width:0"><h3 style="font-size:34px;font-weight:600;color:#3c3950">Outbound only</h3><p style="font-size:27px;line-height:1.4;color:#5f727f">fc-api calls out to the VPS. The VPS never calls in. An attacker on the internet has no path into the court network.</p></div></div><div style="display:flex;gap:24px;background:#FFFFFF;padding:34px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><x-icon name="Key" style="width:52px;height:52px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column;gap:10px;min-width:0"><h3 style="font-size:34px;font-weight:600;color:#3c3950">Sealed at rest</h3><p style="font-size:27px;line-height:1.4;color:#5f727f">Each filing is encrypted with the court’s public key the moment it is validated. In clear: reference, form code, hashed phone, status, times.</p></div></div><div style="display:flex;gap:24px;background:#FFFFFF;padding:34px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><x-icon name="CheckCircle" style="width:52px;height:52px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column;gap:10px;min-width:0"><h3 style="font-size:34px;font-weight:600;color:#3c3950">Two-step acknowledgement</h3><p style="font-size:27px;line-height:1.4;color:#5f727f">fc-api confirms to the VPS, which deletes. Madhoshi confirms to fc-api, which drops its copy. Nothing is kept longer than needed.</p></div></div><div style="display:flex;gap:24px;background:#FFFFFF;padding:34px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><x-icon name="Book" style="width:52px;height:52px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column;gap:10px;min-width:0"><h3 style="font-size:34px;font-weight:600;color:#3c3950">Forms are data</h3><p style="font-size:27px;line-height:1.4;color:#5f727f">One versioned schema per form drives the web form, the validation and the display in Madhoshi. Court reviewers sign off each version.</p></div></div>
+</div>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 5</p>
+<aside>If you remember four things from the architecture, these are the four. Each one answers a risk on the register: outbound-only answers R02, sealing answers R01, the two-step acknowledgement keeps the public server nearly empty, and forms as data keeps the wording under the court’s control.</aside>
+</section>
+<section id="filing" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">How a citizen files · phase 1</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">No sign-in. A form key and a verified phone.</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
+<div style="display:flex;gap:20px;align-items:start;background:#FFFFFF;padding:28px 30px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="width:60px;height:60px;border-radius:50%;background:#00838f;display:flex;align-items:center;justify-content:center;flex:none"><p style="font-size:30px;font-weight:600;color:#f1f2f4">1</p></div><div style="flex:1;display:flex;flex-direction:column;gap:6px;min-width:0"><h3 style="font-size:32px;font-weight:600;color:#3c3950">Open a form</h3><p style="font-size:26px;line-height:1.35;color:#5f727f">Anyone: the applicant, a law firm, a relative.</p></div></div><div style="display:flex;gap:20px;align-items:start;background:#FFFFFF;padding:28px 30px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="width:60px;height:60px;border-radius:50%;background:#00838f;display:flex;align-items:center;justify-content:center;flex:none"><p style="font-size:30px;font-weight:600;color:#f1f2f4">2</p></div><div style="flex:1;display:flex;flex-direction:column;gap:6px;min-width:0"><h3 style="font-size:32px;font-weight:600;color:#3c3950">Form key issued</h3><p style="font-size:26px;line-height:1.35;color:#5f727f">A random reference, like VK-UV9WB2PQ. The only handle for the filing.</p></div></div><div style="display:flex;gap:20px;align-items:start;background:#FFFFFF;padding:28px 30px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="width:60px;height:60px;border-radius:50%;background:#00838f;display:flex;align-items:center;justify-content:center;flex:none"><p style="font-size:30px;font-weight:600;color:#f1f2f4">3</p></div><div style="flex:1;display:flex;flex-direction:column;gap:6px;min-width:0"><h3 style="font-size:32px;font-weight:600;color:#3c3950">Phone verified</h3><p style="font-size:26px;line-height:1.35;color:#5f727f">Six-digit SMS code to the contact number. Five tries, five minutes.</p></div></div><div style="display:flex;gap:20px;align-items:start;background:#FFFFFF;padding:28px 30px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="width:60px;height:60px;border-radius:50%;background:#00838f;display:flex;align-items:center;justify-content:center;flex:none"><p style="font-size:30px;font-weight:600;color:#f1f2f4">4</p></div><div style="flex:1;display:flex;flex-direction:column;gap:6px;min-width:0"><h3 style="font-size:32px;font-weight:600;color:#3c3950">Fill and attach</h3><p style="font-size:26px;line-height:1.35;color:#5f727f">Dhivehi and English. Drafts stay in the browser, never on the server.</p></div></div><div style="display:flex;gap:20px;align-items:start;background:#FFFFFF;padding:28px 30px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="width:60px;height:60px;border-radius:50%;background:#580f41;display:flex;align-items:center;justify-content:center;flex:none"><p style="font-size:30px;font-weight:600;color:#f1f2f4">5</p></div><div style="flex:1;display:flex;flex-direction:column;gap:6px;min-width:0"><h3 style="font-size:32px;font-weight:600;color:#3c3950">Submit, sealed</h3><p style="font-size:26px;line-height:1.35;color:#5f727f">Validated against the schema, then encrypted with the court’s public key.</p></div></div><div style="display:flex;gap:20px;align-items:start;background:#FFFFFF;padding:28px 30px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="width:60px;height:60px;border-radius:50%;background:#3c3950;display:flex;align-items:center;justify-content:center;flex:none"><p style="font-size:30px;font-weight:600;color:#f1f2f4">6</p></div><div style="flex:1;display:flex;flex-direction:column;gap:6px;min-width:0"><h3 style="font-size:32px;font-weight:600;color:#3c3950">Follow the status</h3><p style="font-size:26px;line-height:1.35;color:#5f727f">Form key plus a fresh code to the same phone. The reference alone opens nothing.</p></div></div>
+</div>
+<div style="display:flex;background:#FFFFFF;padding:24px 32px;border-left:6px solid #580f41;border-radius:0 16px 16px 0"><p style="font-size:28px;line-height:1.4;color:#3c3950">The phone proves a contact, not the applicant. <b>Staff verify the applicant in Madhoshi</b> from the ID card image, selfie and signature. eFaas comes in a later release.</p></div>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 6</p>
+<aside>This is the correction from earlier drafts: no eFaas in phase 1, no accounts. The prototype already works this way, with a reference number and a phone number. We keep that model and close its one weakness: the status page will need the code as well as the reference.</aside>
+</section>
+<section id="prototype" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Why rebuild</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">The prototype proved the forms. It cannot be the product.</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:40px;border:1px solid #dfe5e8;border-radius:16px;min-width:0">
+<h3 style="font-size:34px;font-weight:600;color:#00838f">What the prototype gave us</h3><ul style="font-size:29px;line-height:1.45;color:#5f727f;padding:0 0 0 34px">
 <li>17 forms as JSON specs: fields, steps, Dhivehi wording</li>
 <li>The citizen flow: reference, phone, status page, corrections</li>
 <li>A working admin panel to learn the staff needs from</li>
 <li>An OTP design and a notification outbox</li>
 <li>Months of conversations with the court, captured</li>
 </ul>
-</div>
-<div style="flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
-<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:20px 24px;border:1px solid #dfe5e8;border-radius:16px">
-<p style="font-family:'Open Sans', Arial, sans-serif;font-size:60px;font-weight:700;line-height:1;color:#580f41">3,018</p>
-<p style="font-size:24px;line-height:1.3;color:#5f727f">lines in one file, engine.js, holding all form state</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:20px 24px;border:1px solid #dfe5e8;border-radius:16px">
-<p style="font-family:'Open Sans', Arial, sans-serif;font-size:60px;font-weight:700;line-height:1;color:#580f41">65</p>
-<p style="font-size:24px;line-height:1.3;color:#5f727f">screens built by string concatenation into innerHTML</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:20px 24px;border:1px solid #dfe5e8;border-radius:16px">
-<p style="font-family:'Open Sans', Arial, sans-serif;font-size:60px;font-weight:700;line-height:1;color:#580f41">0</p>
-<p style="font-size:24px;line-height:1.3;color:#5f727f">front-end tests, types, or build step</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:20px 24px;border:1px solid #dfe5e8;border-radius:16px">
-<p style="font-family:'Open Sans', Arial, sans-serif;font-size:60px;font-weight:700;line-height:1;color:#580f41">5,129</p>
-<p style="font-size:24px;line-height:1.3;color:#5f727f">lines of hand-wired browser JavaScript across 14 files</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:20px 24px;border:1px solid #dfe5e8;border-radius:16px">
-<p style="font-family:'Open Sans', Arial, sans-serif;font-size:60px;font-weight:700;line-height:1;color:#580f41">2</p>
-<p style="font-size:24px;line-height:1.3;color:#5f727f">libraries copied in by hand, outside any dependency record</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:20px 24px;border:1px solid #dfe5e8;border-radius:16px">
-<p style="font-family:'Open Sans', Arial, sans-serif;font-size:60px;font-weight:700;line-height:1;color:#580f41">1</p>
-<p style="font-size:24px;line-height:1.3;color:#5f727f">reference number was all it took to read a filing’s status</p>
+</div><div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:40px;border:1px solid #dfe5e8;border-radius:16px;min-width:0">
+<h3 style="font-size:34px;font-weight:600;color:#580f41">What a Tier 1 product must carry</h3><ul style="font-size:29px;line-height:1.45;color:#5f727f;padding:0 0 0 34px">
+<li>Static analysis and tests at every gate</li>
+<li>A bill of materials for every dependency</li>
+<li>Output escaping that cannot be forgotten</li>
+<li>A page-weight budget for 4G</li>
+<li>Code more than one person can maintain</li>
+</ul>
 </div>
 </div>
-</div>
-<p style="font-size:26px;line-height:1.4;color:#5f727f;width:1664px">None of this is a criticism. It is what a prototype should be. Tier 1 asks for what it was never built to carry: static analysis, tests, a bill of materials, and code more than one person can maintain.</p>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 7 · Figures measured on the prototype repository, 28 October 2026</p>
-<aside>Be generous here. The prototype did its job: it showed the court what online forms look like and captured seventeen forms’ worth of wording. The numbers on the right are not failures; they are the shape of a prototype. The point is that the gate criteria ask for properties this code was never built to have.</aside>
+<p style="font-size:28px;line-height:1.4;color:#5f727f">None of this is a criticism. It is what a prototype should be.</p>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 7</p>
+<aside>Be generous here. The prototype did its job: it showed the court what online forms look like and captured seventeen forms’ worth of wording. The point is that the gate criteria ask for properties this code was never built to have.</aside>
 </section>
-<section id="compare" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:24px">
+<section id="numbers" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:36px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Why a framework</p>
-<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Plain JavaScript or Next.js, for this project</h2>
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Why rebuild</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">The prototype, measured</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:30px 32px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><p style="font-family:'Open Sans', Arial, sans-serif;font-size:80px;font-weight:700;line-height:1;color:#580f41">3,018</p><p style="font-size:27px;line-height:1.3;color:#5f727f">lines in one file, engine.js, holding all form state</p></div><div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:30px 32px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><p style="font-family:'Open Sans', Arial, sans-serif;font-size:80px;font-weight:700;line-height:1;color:#580f41">65</p><p style="font-size:27px;line-height:1.3;color:#5f727f">screens built by string concatenation into innerHTML</p></div><div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:30px 32px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><p style="font-family:'Open Sans', Arial, sans-serif;font-size:80px;font-weight:700;line-height:1;color:#580f41">0</p><p style="font-size:27px;line-height:1.3;color:#5f727f">front-end tests, types, or build step</p></div><div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:30px 32px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><p style="font-family:'Open Sans', Arial, sans-serif;font-size:80px;font-weight:700;line-height:1;color:#580f41">5,129</p><p style="font-size:27px;line-height:1.3;color:#5f727f">lines of hand-wired browser JavaScript across 14 files</p></div><div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:30px 32px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><p style="font-family:'Open Sans', Arial, sans-serif;font-size:80px;font-weight:700;line-height:1;color:#580f41">2</p><p style="font-size:27px;line-height:1.3;color:#5f727f">libraries copied in by hand, outside any dependency record</p></div><div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:30px 32px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><p style="font-family:'Open Sans', Arial, sans-serif;font-size:80px;font-weight:700;line-height:1;color:#580f41">1</p><p style="font-size:27px;line-height:1.3;color:#5f727f">reference number was all it took to read a filing’s status</p></div>
+</div>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 8 · Figures measured on the prototype repository, 28 October 2026</p>
+<aside>Six numbers, all measured on the prototype repository today. They describe a prototype honestly: fast to build, hard to audit.</aside>
+</section>
+<section id="plainjs" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Why a framework</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Plain JavaScript, as the prototype is</h2>
 </div>
 <div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:28px 36px;border-top:6px solid #5f727f;border-radius:0 0 16px 16px">
-<h3 style="font-size:34px;font-weight:600">Plain JavaScript, as the prototype is</h3>
-<div style="display:flex;gap:12px;align-items:center"><x-icon name="Check" style="width:30px;height:30px;color:#00838f"></x-icon><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#00838f;font-weight:600">For</p></div>
-<ul style="font-size:24px;line-height:1.4;color:#3c3950;padding:0 0 0 30px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:36px;border-top:6px solid #00838f;border-radius:0 0 16px 16px;min-width:0">
+<div style="display:flex;gap:12px;align-items:center"><x-icon name="Check" style="width:34px;height:34px;color:#00838f"></x-icon><p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#00838f;font-weight:600">For</p></div><ul style="font-size:29px;line-height:1.45;color:#3c3950;padding:0 0 0 34px">
 <li>No build step, no toolchain to maintain</li>
 <li>Almost no dependencies to whitelist or audit</li>
 <li>Small download, runs in any browser</li>
 <li>It exists today and works for 17 forms</li>
 </ul>
-<div style="display:flex;gap:12px;align-items:center"><x-icon name="Warning" style="width:30px;height:30px;color:#580f41"></x-icon><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#580f41;font-weight:600">Against</p></div>
-<ul style="font-size:24px;line-height:1.4;color:#3c3950;padding:0 0 0 30px">
-<li>Every screen hand-wired: one 3,018-line engine holds all state</li>
-<li>Output escaping by hand, in 65 places; one miss is an injection</li>
-<li>No types: a wrong field key is found by a citizen, not the build</li>
-<li>No tests, no page-weight budget; Dhivehi and right-to-left by hand</li>
-<li>Conventions live in one person’s head; hard to hand over</li>
+</div><div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:36px;border-top:6px solid #580f41;border-radius:0 0 16px 16px;min-width:0">
+<div style="display:flex;gap:12px;align-items:center"><x-icon name="Warning" style="width:34px;height:34px;color:#580f41"></x-icon><p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#580f41;font-weight:600">Against</p></div><ul style="font-size:29px;line-height:1.45;color:#3c3950;padding:0 0 0 34px">
+<li>Every screen hand-wired; one engine holds all state</li>
+<li>Output escaping by hand; one miss is an injection</li>
+<li>No types: mistakes are found by a citizen, not the build</li>
+<li>No tests, no page-weight budget; right-to-left by hand</li>
+<li>Conventions live in one person’s head</li>
 </ul>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:28px 36px;border-top:6px solid #00bcd4;border-radius:0 0 16px 16px">
-<h3 style="font-size:34px;font-weight:600">Next.js with TypeScript, as Aailaa is</h3>
-<div style="display:flex;gap:12px;align-items:center"><x-icon name="Check" style="width:30px;height:30px;color:#00838f"></x-icon><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#00838f;font-weight:600">For</p></div>
-<ul style="font-size:24px;line-height:1.4;color:#3c3950;padding:0 0 0 30px">
-<li>Components escape output by default; injection takes deliberate effort</li>
+</div>
+<p style="font-size:28px;line-height:1.4;color:#5f727f">Lighter, and it works. The cost is that every safety property must be kept by hand, forever.</p>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 9</p>
+<aside>A fair comparison. Plain JavaScript is not wrong; it is unguarded. Every item on the right is a discipline we would have to keep by hand at every change.</aside>
+</section>
+<section id="nextjs" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Why a framework</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Next.js with TypeScript, as Aailaa is</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:36px;border-top:6px solid #00838f;border-radius:0 0 16px 16px;min-width:0">
+<div style="display:flex;gap:12px;align-items:center"><x-icon name="Check" style="width:34px;height:34px;color:#00838f"></x-icon><p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#00838f;font-weight:600">For</p></div><ul style="font-size:29px;line-height:1.45;color:#3c3950;padding:0 0 0 34px">
+<li>Components escape output by default</li>
 <li>Types and lint fail the build before a mistake ships</li>
-<li>Field components and validation tested in isolation, run in CI</li>
-<li>Per-form code splitting; a size budget enforced automatically</li>
-<li>Locale files and right-to-left built in; static export, no server process</li>
-<li>Same stack as Aailaa: shared components, easy to hand over</li>
+<li>Components and validation tested in CI</li>
+<li>Per-form code splitting with a size budget</li>
+<li>Locale files and right-to-left built in; static export</li>
+<li>Same stack as Aailaa: shared parts, easy handover</li>
 </ul>
-<div style="display:flex;gap:12px;align-items:center"><x-icon name="Warning" style="width:30px;height:30px;color:#580f41"></x-icon><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#580f41;font-weight:600">Against</p></div>
-<ul style="font-size:24px;line-height:1.4;color:#3c3950;padding:0 0 0 30px">
-<li>Hundreds of packages: whitelist review, a bill of materials, monthly audits</li>
+</div><div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:36px;border-top:6px solid #580f41;border-radius:0 0 16px 16px;min-width:0">
+<div style="display:flex;gap:12px;align-items:center"><x-icon name="Warning" style="width:34px;height:34px;color:#580f41"></x-icon><p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#580f41;font-weight:600">Against</p></div><ul style="font-size:29px;line-height:1.45;color:#3c3950;padding:0 0 0 34px">
+<li>Hundreds of packages: whitelist review, bill of materials, monthly audits</li>
 <li>A build toolchain to keep current; major upgrades take work</li>
 <li>Bundles grow if nobody watches; the budget must be enforced</li>
 <li>Framework conventions to learn for anyone new to it</li>
 </ul>
 </div>
 </div>
-<p style="font-size:24px;line-height:1.4;color:#3c3950;width:1664px"><b>For this project,</b> Tier 1, 17 forms, one developer: the framework’s safe defaults are worth its dependency cost.</p>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 8</p>
-<aside>A fair comparison. Plain JavaScript is lighter and has real advantages, and the prototype proves it can be made to work. The case for Next.js is not that it is modern; it is that the things a Tier 1 audit checks are its defaults, and the cost, a larger dependency tree, is one the court already pays and manages on Aailaa.</aside>
+<p style="font-size:28px;line-height:1.4;color:#5f727f">For this project, Tier 1, 17 forms, one developer: the safe defaults are worth the dependency cost, a cost Aailaa already manages.</p>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 10</p>
+<aside>The case for Next.js is not that it is modern; it is that the things a Tier 1 audit checks are its defaults, and the cost, a larger dependency tree, is one the court already pays and manages on Aailaa.</aside>
 </section>
-<section id="vanilla" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<section id="vanilla" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:32px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Why a framework</p>
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Why a framework</p>
 <h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">What Tier 1 asks for, and where it comes from</h2>
 </div>
-<table style="font-size:23px;color:#3c3950;background:#FFFFFF;border:1px solid #dfe5e8">
-<tr style="background:#3c3950"><th style="width:26%;text-align:left;color:#f1f2f4;padding:12px 20px">Tier 1 needs</th><th style="width:37%;text-align:left;color:#f1f2f4">Hand-written JavaScript (the prototype)</th><th style="width:37%;text-align:left;color:#f1f2f4">Next.js with TypeScript (Aailaa)</th></tr>
+<table style="font-size:27px;color:#3c3950;background:#FFFFFF;border:1px solid #dfe5e8">
+<tr style="background:#3c3950"><th style="width:27%;text-align:left;color:#f1f2f4;padding:12px 20px">Tier 1 needs</th><th style="width:38%;text-align:left;color:#f1f2f4">Hand-written JavaScript</th><th style="width:35%;text-align:left;color:#f1f2f4">Next.js with TypeScript</th></tr>
 <tr><td><b>No script injection</b></td><td>65 innerHTML strings escaped by hand, forever</td><td>Components escape by default</td></tr>
 <tr style="background:#f1f2f4"><td><b>Mistakes caught early</b></td><td>Found at runtime, by a citizen on a phone</td><td>Types and lint fail the build first</td></tr>
 <tr><td><b>Tests as gate evidence</b></td><td>None on the front end</td><td>Components and validation tested in CI</td></tr>
@@ -368,257 +237,151 @@ aside { display:none; }
 <tr><td><b>Dhivehi and English</b></td><td>Strings and right-to-left spread in the code</td><td>Locale files, as Aailaa already does</td></tr>
 <tr style="background:#f1f2f4"><td><b>More than one maintainer</b></td><td>Conventions in one person’s head</td><td>Shared with Aailaa; handover in days</td></tr>
 </table>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 9</p>
-<aside>Plain JavaScript can be written carefully; the difference is defaults, and with one developer and an audit at every gate the safe behaviour must be the one that costs nothing. The honest version of the argument. Vanilla JavaScript is not wrong; it is unguarded. Each row is something a gate reviewer will ask for. In the left column each one is a discipline we must keep by hand; in the right column each one is the default, and the tooling enforces it in CI.</aside>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 11</p>
+<aside>Plain JavaScript can be written carefully; the difference is defaults, and with one developer and an audit at every gate the safe behaviour must be the one that costs nothing. Each row is something a gate reviewer will ask for.</aside>
 </section>
-<section id="keep" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<section id="keep" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:36px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Why rebuild</p>
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Why rebuild</p>
 <h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">What we carry over, and what we leave</h2>
 </div>
-<div style="display:flex;gap:40px">
-<div style="flex:1;display:flex;flex-direction:column;gap:24px;background:#FFFFFF;padding:48px;border-top:6px solid #00838f;border-radius:0 0 16px 16px">
-<div style="display:flex;gap:16px;align-items:center">
-<x-icon name="Check" style="width:40px;height:40px;color:#00838f"></x-icon>
-<h3 style="font-size:36px;font-weight:600">Carried over as content and design</h3>
-</div>
-<ul style="font-size:27px;line-height:1.55;color:#5f727f;padding:0 0 0 32px">
-<li>The 17 form specs: fields, steps, Dhivehi wording, shared modules. Re-checked against the paper forms, then converted to our schema format.</li>
-<li>The citizen flow: reference number, contact phone, status page, returned-for-correction.</li>
-<li>The OTP design: hashed code, five minutes, five tries, resend once a minute.</li>
-<li>Upload rules learned the hard way: file type from the bytes, size caps, no execution.</li>
-<li>The Dhivehi phonetic keyboard mapping and the date and phone conventions.</li>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:40px;border-top:6px solid #00838f;border-radius:0 0 16px 16px;min-width:0">
+<div style="display:flex;gap:14px;align-items:center"><x-icon name="Check" style="width:40px;height:40px;color:#00838f"></x-icon><h3 style="font-size:34px;font-weight:600;color:#3c3950">Carried over</h3></div><ul style="font-size:28px;line-height:1.45;color:#5f727f;padding:0 0 0 34px">
+<li>The 17 form specs, re-checked against the paper forms</li>
+<li>The citizen flow: reference, phone, status, corrections</li>
+<li>The OTP design: hashed code, five minutes, five tries</li>
+<li>Upload rules: type from the bytes, size caps, no execution</li>
+<li>The Dhivehi phonetic keyboard and date conventions</li>
 </ul>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:24px;background:#FFFFFF;padding:48px;border-top:6px solid #580f41;border-radius:0 0 16px 16px">
-<div style="display:flex;gap:16px;align-items:center">
-<x-icon name="Warning" style="width:40px;height:40px;color:#580f41"></x-icon>
-<h3 style="font-size:36px;font-weight:600">Left behind</h3>
-</div>
-<ul style="font-size:27px;line-height:1.55;color:#5f727f;padding:0 0 0 32px">
-<li>The code itself, front end and backend. Nothing is copied across.</li>
-<li>The admin panel. Staff work in Madhoshi, where sign-in, grants and audit already exist.</li>
-<li>Filings stored readable on the public server. Ours are sealed before they are written.</li>
-<li>Status by reference number alone. Ours needs the code to the verified phone as well.</li>
-<li>A public server that can push into the court. Ours is only ever pulled from.</li>
+</div><div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:40px;border-top:6px solid #580f41;border-radius:0 0 16px 16px;min-width:0">
+<div style="display:flex;gap:14px;align-items:center"><x-icon name="Warning" style="width:40px;height:40px;color:#580f41"></x-icon><h3 style="font-size:34px;font-weight:600;color:#3c3950">Left behind</h3></div><ul style="font-size:28px;line-height:1.45;color:#5f727f;padding:0 0 0 34px">
+<li>The code itself, front end and backend</li>
+<li>The admin panel: staff work in Madhoshi</li>
+<li>Filings stored readable on the public server</li>
+<li>Status by reference number alone</li>
+<li>A public server that can push into the court</li>
 </ul>
 </div>
 </div>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 10</p>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 12</p>
 <aside>Rebuild does not mean discard. The left column is most of the value of the prototype and all of it survives. The right column is what a Tier 1 system cannot carry.</aside>
 </section>
-<section id="stackicons" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<section id="stackicons" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:32px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Technology</p>
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Technology</p>
 <h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">The stack at a glance</h2>
 </div>
-<div style="display:flex;gap:24px">
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:32px;border-top:6px solid #580f41;border-radius:0 0 16px 16px">
-<h3 style="font-size:28px;font-weight:600;color:#580f41">Public front end</h3>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/nextdotjs.svg" alt="Next.js" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">Next.js</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Static site, no server process</p></div></div>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/react.svg" alt="React" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">React</p><p style="font-size:24px;line-height:1.3;color:#5f727f">One component per field type</p></div></div>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/typescript.svg" alt="TypeScript" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">TypeScript</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Mistakes caught at build time</p></div></div>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/tailwindcss.svg" alt="Tailwind CSS" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">Tailwind CSS</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Same styling as Aailaa</p></div></div>
+<div style="display:flex;gap:20px">
+<div style="flex:1;display:flex;flex-direction:column;gap:22px;background:#FFFFFF;padding:28px;border-top:6px solid #580f41;border-radius:0 0 16px 16px;min-width:0"><h3 style="font-size:28px;font-weight:600;color:#580f41">Public front end</h3><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/nextdotjs.svg" alt="Next.js" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">Next.js</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Static site, no server process</p></div></div><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/react.svg" alt="React" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">React</p><p style="font-size:24px;line-height:1.3;color:#5f727f">One component per field type</p></div></div><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/typescript.svg" alt="TypeScript" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">TypeScript</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Mistakes caught at build time</p></div></div><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/tailwindcss.svg" alt="Tailwind CSS" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">Tailwind CSS</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Same styling as Aailaa</p></div></div></div><div style="flex:1;display:flex;flex-direction:column;gap:22px;background:#FFFFFF;padding:28px;border-top:6px solid #580f41;border-radius:0 0 16px 16px;min-width:0"><h3 style="font-size:28px;font-weight:600;color:#580f41">Public backend · VPS</h3><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/go.svg" alt="Go" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">Go</p><p style="font-size:24px;line-height:1.3;color:#5f727f">One binary, few dependencies</p></div></div><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/openapiinitiative.svg" alt="REST · OpenAPI" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">REST · OpenAPI</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Contract written before code</p></div></div><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/sqlite.svg" alt="SQLite" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">SQLite</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Sealed rows, nothing to steal</p></div></div><div style="display:flex;gap:18px;align-items:center"><x-icon name="Lock" style="width:60px;height:60px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">Sealing</p><p style="font-size:24px;line-height:1.3;color:#5f727f">XChaCha20, X25519</p></div></div></div><div style="flex:1;display:flex;flex-direction:column;gap:22px;background:#FFFFFF;padding:28px;border-top:6px solid #00838f;border-radius:0 0 16px 16px;min-width:0"><h3 style="font-size:28px;font-weight:600;color:#00838f">Court integration · fc-api</h3><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/go.svg" alt="Go" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">Go</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Same language as Madhoshi</p></div></div><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/graphql.svg" alt="GraphQL" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">GraphQL</p><p style="font-size:24px;line-height:1.3;color:#5f727f">One API over all court data</p></div></div><div style="display:flex;gap:18px;align-items:center"><x-icon name="Database" style="width:60px;height:60px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">Connectors</p><p style="font-size:24px;line-height:1.3;color:#5f727f">MySQL, MongoDB, Firebase, Sheets, files</p></div></div><div style="display:flex;gap:18px;align-items:center"><x-icon name="Key" style="width:60px;height:60px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">Mutual TLS</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Court-issued certificate</p></div></div></div><div style="flex:1;display:flex;flex-direction:column;gap:22px;background:#FFFFFF;padding:28px;border-top:6px solid #00838f;border-radius:0 0 16px 16px;min-width:0"><h3 style="font-size:28px;font-weight:600;color:#00838f">Staff side and platform</h3><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/go.svg" alt="Madhoshi" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">Madhoshi</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Go, in production; holds the key</p></div></div><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/github.svg" alt="GitHub" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">GitHub</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Court-owned code, CI, SBOM</p></div></div><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/akamai.svg" alt="Akamai Cloud" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">Akamai Cloud</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Pilot VPS, about $15 a month</p></div></div><div style="display:flex;gap:18px;align-items:center"><img src="img/icons/cloudflare.svg" alt="Cloudflare" style="width:60px;height:60px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column;min-width:0"><p style="font-size:28px;font-weight:600;line-height:1.2">Cloudflare</p><p style="font-size:24px;line-height:1.3;color:#5f727f">In front of the VPS, as on the website</p></div></div></div>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:32px;border-top:6px solid #580f41;border-radius:0 0 16px 16px">
-<h3 style="font-size:28px;font-weight:600;color:#580f41">Public backend · VPS</h3>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/go.svg" alt="Go" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">Go</p><p style="font-size:24px;line-height:1.3;color:#5f727f">One compiled binary, few dependencies</p></div></div>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/openapiinitiative.svg" alt="OpenAPI" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">REST · OpenAPI</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Contract written before code</p></div></div>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/sqlite.svg" alt="SQLite" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">SQLite</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Sealed rows, nothing to steal</p></div></div>
-<div style="display:flex;gap:20px;align-items:center"><x-icon name="Lock" style="width:56px;height:56px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">XChaCha20 · X25519</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Sealing, from Go’s standard crypto</p></div></div>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:32px;border-top:6px solid #00bcd4;border-radius:0 0 16px 16px">
-<h3 style="font-size:28px;font-weight:600;color:#00838f">Court integration · fc-api</h3>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/go.svg" alt="Go" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">Go</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Same language as Madhoshi</p></div></div>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/graphql.svg" alt="GraphQL" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">GraphQL</p><p style="font-size:24px;line-height:1.3;color:#5f727f">One API over all court data</p></div></div>
-<div style="display:flex;gap:20px;align-items:center"><x-icon name="Database" style="width:56px;height:56px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">Connectors, any source</p><p style="font-size:24px;line-height:1.3;color:#5f727f">MySQL, MongoDB, Firebase, Sheets, CSV, JSON</p></div></div>
-<div style="display:flex;gap:20px;align-items:center"><x-icon name="Key" style="width:56px;height:56px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">Mutual TLS</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Court-issued certificate to the VPS</p></div></div>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:32px;border-top:6px solid #00bcd4;border-radius:0 0 16px 16px">
-<h3 style="font-size:28px;font-weight:600;color:#00838f">Staff side and platform</h3>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/go.svg" alt="Go" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">Madhoshi</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Go, in production; holds the key</p></div></div>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/github.svg" alt="GitHub" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">GitHub</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Court-owned code, CI, bill of materials</p></div></div>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/akamai.svg" alt="Akamai" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">Akamai Cloud</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Pilot VPS, about $15 a month</p></div></div>
-<div style="display:flex;gap:20px;align-items:center"><img src="img/icons/cloudflare.svg" alt="Cloudflare" style="width:56px;height:56px;object-fit:contain"><div style="flex:1;display:flex;flex-direction:column"><p style="font-size:26px;font-weight:600;line-height:1.2">Cloudflare</p><p style="font-size:24px;line-height:1.3;color:#5f727f">Edge firewall, as on the website today</p></div></div>
-</div>
-</div>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 11 · Logos belong to their projects</p>
-<aside>One picture of the whole stack. Two colours: plum for the public side on the VPS, cyan for the court side. Go runs on both sides and in Madhoshi, so one developer covers all three. fc-api is not tied to any one database: a connector per source, from MySQL and MongoDB to Firebase, Google Sheets and plain files; its own small SQLite store holds only sync copies and the audit log. Next.js and Tailwind are what Aailaa already uses. Cloudflare in front of the VPS is the same edge firewall whose numbers we saw earlier.</aside>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 13 · Logos belong to their projects</p>
+<aside>One picture of the whole stack. Plum for the public side on the VPS, cyan for the court side. Go runs on both sides and in Madhoshi, so one developer covers all three. fc-api is not tied to any one database: a connector per source, from MySQL and MongoDB to Firebase, Google Sheets and plain files; its own small SQLite store holds only sync copies and the audit log.</aside>
 </section>
-<section id="stack" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<section id="stack" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:32px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Technology</p>
-<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">One language for the court’s three pieces, few dependencies</h2>
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Technology</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Stack and reasons: the public side</h2>
 </div>
-<table style="font-size:24px;color:#3c3950;background:#FFFFFF;border:1px solid #dfe5e8">
-<tr style="background:#3c3950"><th style="width:17%;text-align:left;color:#f1f2f4;padding:12px 18px">Layer</th><th style="width:30%;text-align:left;color:#f1f2f4">Choice</th><th style="width:40%;text-align:left;color:#f1f2f4">Why</th><th style="width:13%;text-align:left;color:#f1f2f4">Status</th></tr>
-<tr><td><b>Web front end</b></td><td>Next.js static export, React, TypeScript, Tailwind</td><td>Same stack as Aailaa: shared components and conventions; no server process on the public box</td><td style="color:#00838f"><b>Recommend</b> Q03</td></tr>
-<tr style="background:#f1f2f4"><td><b>fc-eforms backend</b></td><td>Go, standard library plus a small router; REST with an OpenAPI contract</td><td>Same language as Madhoshi, one developer covers all three; tiny dependency tree for the MDS whitelist</td><td style="color:#00838f"><b>Recommend</b> Q02a</td></tr>
-<tr><td><b>fc-api</b></td><td>Go; GraphQL proposed for court clients, never public</td><td>Runs beside Madhoshi on a Windows server where Go deploys are proven; one schema over many sources</td><td style="color:#00838f"><b>Recommend</b> Q02b, Q23</td></tr>
-<tr style="background:#f1f2f4"><td><b>Staff side</b></td><td>Madhoshi: Go 1.26, single binary, one third-party dependency</td><td>Already in production; the eforms module is added as a component</td><td style="color:#5f727f"><b>Existing</b></td></tr>
-<tr><td><b>Citizen access</b></td><td>Form key plus SMS OTP; no accounts</td><td>Anyone may file for an applicant; no MDS request needed for the pilot; eFaas later</td><td style="color:#00838f"><b>Decided</b> ADR-002</td></tr>
-<tr style="background:#f1f2f4"><td><b>Sealing</b></td><td>XChaCha20-Poly1305 per filing, data key sealed to the court’s X25519 public key</td><td>Authenticated encryption from Go’s standard crypto library; no hand-written cryptography</td><td style="color:#580f41"><b>Proposed</b></td></tr>
-<tr><td><b>Court to VPS</b></td><td>Mutual TLS with a court-issued certificate, plus IP allowlist</td><td>Machine identity without a shared secret; revoke by removing a fingerprint</td><td style="color:#580f41"><b>Proposed</b></td></tr>
-<tr style="background:#f1f2f4"><td><b>Pilot hosting</b></td><td>Akamai Cloud 2 GB VM, about $15 a month; firewall 443 and 80 only</td><td>Cheap and disposable for test data; region chosen by measured latency from Dhiraagu and Ooredoo</td><td style="color:#00838f"><b>Decided</b> pilot</td></tr>
-<tr><td><b>Delivery</b></td><td>Court-owned GitHub, protected main, CI with tests, SAST, dependency audit, SBOM</td><td>The evidence Gate 3 asks for; answers the single-developer risk</td><td style="color:#580f41"><b>Proposed</b> Q12</td></tr>
+<table style="font-size:26px;color:#3c3950;background:#FFFFFF;border:1px solid #dfe5e8">
+<tr style="background:#3c3950"><th style="width:16%;text-align:left;color:#f1f2f4;padding:12px 18px">Layer</th><th style="width:30%;text-align:left;color:#f1f2f4">Choice</th><th style="width:40%;text-align:left;color:#f1f2f4">Why</th><th style="width:14%;text-align:left;color:#f1f2f4">Status</th></tr>
+<tr><td><b>Web front end</b></td><td>Next.js static export, React, TypeScript, Tailwind</td><td>Same stack as Aailaa; no server process on the public box</td><td style="color:#00838f"><b>Recommend</b> Q03</td></tr>
+<tr style="background:#f1f2f4"><td><b>Backend</b></td><td>Go, standard library plus a small router; REST with OpenAPI</td><td>Same language as Madhoshi; tiny dependency tree for the MDS whitelist</td><td style="color:#00838f"><b>Recommend</b> Q02a</td></tr>
+<tr><td><b>Citizen access</b></td><td>Form key plus SMS OTP; no accounts</td><td>Anyone may file for an applicant; no MDS request needed for the pilot</td><td style="color:#00838f"><b>Decided</b> ADR-002</td></tr>
+<tr style="background:#f1f2f4"><td><b>Sealing</b></td><td>XChaCha20-Poly1305 per filing; key sealed to the court’s X25519 key</td><td>Authenticated encryption from Go’s standard crypto; nothing hand-written</td><td style="color:#580f41"><b>Proposed</b></td></tr>
+<tr><td><b>Pilot hosting</b></td><td>Akamai Cloud 2 GB VM, about $15 a month; firewall 443 and 80 only</td><td>Cheap and disposable for test data; region by measured latency</td><td style="color:#00838f"><b>Decided</b> pilot</td></tr>
 </table>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 12 · Recommend = not yet in an ADR; today’s agreement goes into one</p>
-<aside>The stack is on today’s agenda. Go everywhere on the court side because Madhoshi already runs on it and I maintain all three. Next.js on the public front end because Aailaa already uses it and the public site should look like the portal. Every dependency has to pass the MDS whitelist and appear in the bill of materials, so fewer is better.</aside>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 14 · Recommend = not yet in an ADR</p>
+<aside>The public side. Next.js because Aailaa already uses it. Go because Madhoshi already runs on it. The access model and pilot hosting are decided; sealing is designed and awaits the library check.</aside>
 </section>
-<section id="data" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<section id="stack2" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:32px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Databases</p>
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Technology</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Stack and reasons: the court side and delivery</h2>
+</div>
+<table style="font-size:26px;color:#3c3950;background:#FFFFFF;border:1px solid #dfe5e8">
+<tr style="background:#3c3950"><th style="width:16%;text-align:left;color:#f1f2f4;padding:12px 18px">Layer</th><th style="width:30%;text-align:left;color:#f1f2f4">Choice</th><th style="width:40%;text-align:left;color:#f1f2f4">Why</th><th style="width:14%;text-align:left;color:#f1f2f4">Status</th></tr>
+<tr><td><b>fc-api</b></td><td>Go; GraphQL proposed for court clients, never public</td><td>Runs beside Madhoshi; one schema over many sources</td><td style="color:#00838f"><b>Recommend</b> Q02b, Q23</td></tr>
+<tr style="background:#f1f2f4"><td><b>Connectors</b></td><td>One per source: MySQL, MongoDB, Firebase, Sheets, CSV, JSON</td><td>fc-api is not tied to one database; each source keeps its own</td><td style="color:#00838f"><b>Decided</b></td></tr>
+<tr><td><b>Staff side</b></td><td>Madhoshi: Go, single binary, one third-party dependency</td><td>Already in production; eforms is added as a module</td><td style="color:#5f727f"><b>Existing</b></td></tr>
+<tr style="background:#f1f2f4"><td><b>Court to VPS</b></td><td>Mutual TLS with a court-issued certificate, plus IP allowlist</td><td>Machine identity without a shared secret</td><td style="color:#580f41"><b>Proposed</b></td></tr>
+<tr><td><b>Edge</b></td><td>Cloudflare in front of the VPS: WAF, bot and country rules, as on the website</td><td>The origin accepts Cloudflare only; the same rules that already block attacks today</td><td style="color:#00838f"><b>Decided</b> Q27</td></tr>
+<tr style="background:#f1f2f4"><td><b>Delivery</b></td><td>Court-owned GitHub, protected main, CI with tests, SAST, audit, SBOM</td><td>The evidence Gate 3 asks for; answers the single-developer risk</td><td style="color:#580f41"><b>Proposed</b> Q12</td></tr>
+</table>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 15 · Recommend = not yet in an ADR</p>
+<aside>The court side. fc-api in Go beside Madhoshi, reaching every source through its own connector. Delivery through court-owned GitHub with the CI evidence the gates ask for.</aside>
+</section>
+<section id="data" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Databases</p>
 <h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Three small stores, none shared, SQLite to start</h2>
 </div>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;padding:40px;border:2px solid #580f41;border-radius:16px">
-<p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#580f41;font-weight:600">VPS · fc-eforms store</p>
-<h3 style="font-size:34px;font-weight:600">Sealed blobs and routing metadata</h3>
-<p style="font-size:25px;line-height:1.4;color:#5f727f">Filing rows while waiting for collection: reference, form code, schema version, hashed phone, times, lease, key id, <b>sealed payload</b>, <b>sealed attachments</b>. Status records afterwards. Payload deleted on acknowledgement.</p>
-<p style="font-size:25px;line-height:1.4;color:#3c3950"><b>SQLite</b> in WAL mode; sealed attachments as files in a service-only folder. No database server to harden on a public box. Postgres if production hosting provides one.</p>
+<div style="display:flex;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;color:#3c3950;padding:36px;border:2px solid #580f41;border-radius:16px;min-width:0"><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#580f41;font-weight:600">VPS · fc-eforms</p><h3 style="font-size:32px;font-weight:600;color:#3c3950">Sealed blobs and routing data</h3><p style="font-size:26px;line-height:1.4;color:#5f727f">Filing rows while waiting for collection: reference, form code, hashed phone, times, <b>sealed payload</b> and <b>sealed attachments</b>. Deleted on acknowledgement.</p><p style="font-size:26px;line-height:1.4;color:#3c3950"><b>SQLite</b> in WAL mode; attachments as files. No database server to harden on a public box.</p></div><div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;color:#3c3950;padding:36px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#00838f;font-weight:600">FC server · fc-api</p><h3 style="font-size:32px;font-weight:600;color:#3c3950">A connector per source, not a database</h3><p style="font-size:26px;line-height:1.4;color:#5f727f">Reads what the court already has, each through its own read-only connector: MySQL, MongoDB, Firebase, Sheets, CSV and JSON files.</p><p style="font-size:26px;line-height:1.4;color:#3c3950">Its own store is small, <b>SQLite</b> to start: sealed filings in transit, synced copies, the audit log.</p></div><div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#3c3950;color:#f1f2f4;padding:36px;border:1px solid #3c3950;border-radius:16px;min-width:0"><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#4dd0e1;font-weight:600">FC server · Madhoshi</p><h3 style="font-size:32px;font-weight:600;color:#3c3950">The decrypted filings</h3><p style="font-size:26px;line-height:1.4;color:#c5cad6">Existing tables plus the eforms module: decrypted filings with their schema version, assignment, status history, messages.</p><p style="font-size:26px;line-height:1.4;color:#f1f2f4"><b>SQLite</b>, already in production. The private key is not in the database: DPAPI now, an HSM later.</p></div>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;padding:40px;border:1px solid #dfe5e8;border-radius:16px">
-<p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#00838f;font-weight:600">FC server · fc-api sync store</p>
-<h3 style="font-size:34px;font-weight:600">Not a database: a connector per source</h3>
-<p style="font-size:25px;line-height:1.4;color:#5f727f">fc-api reads whatever the court already has, each through its own connector and read-only credential: MySQL, MongoDB, Firebase, Google Sheets, CSV and JSON files, and the eForms link.</p>
-<p style="font-size:25px;line-height:1.4;color:#3c3950">Its own store is small, <b>SQLite</b> to start: sealed filings awaiting Madhoshi, synced copies of sources that cannot be queried live, and the audit log of every read of personal data.</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#3c3950;color:#f1f2f4;padding:40px;border-radius:16px">
-<p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#4dd0e1;font-weight:600">FC server · Madhoshi</p>
-<h3 style="font-size:34px;font-weight:600">The decrypted filings</h3>
-<p style="font-size:25px;line-height:1.4;color:#c5cad6">Existing tables plus the eforms module: decrypted filings with their schema version, assignment, status history, messages. Attachments on disk.</p>
-<p style="font-size:25px;line-height:1.4;color:#f1f2f4"><b>SQLite</b>, already in production. The private key is not in the database: Windows DPAPI or Credential Manager, an HSM later, and an offline backup held by two custodians.</p>
-</div>
-</div>
-<div style="display:flex;gap:24px;background:#dfe5e8;padding:28px 40px;border-radius:16px">
-<p style="font-size:26px;line-height:1.4;color:#3c3950"><b>Never in clear on the VPS:</b> national ID numbers, names, addresses, case details, attachments, OTP codes. The contact phone is the one exception, kept encrypted with a VPS-local key because the server must send the code and the notifications.</p>
-</div>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 13</p>
-<aside>Each component owns its data. The public store is nearly empty by design. The court copy in fc-api is still sealed. Madhoshi is where the data becomes readable, and it is already a production SQLite system, which is why SQLite is the recommendation everywhere to start.</aside>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 16</p>
+<aside>Each component owns its data. The public store is nearly empty by design. fc-api reaches every court source through a connector and keeps only a small store of its own. Madhoshi is where the data becomes readable, and it is already a production SQLite system.</aside>
 </section>
-<section id="phases" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<section id="datarules" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:36px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Plan</p>
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Databases</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Data rules that shape every table</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+<div style="display:flex;gap:24px;background:#FFFFFF;padding:34px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><x-icon name="Lock" style="width:52px;height:52px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column;gap:10px;min-width:0"><h3 style="font-size:34px;font-weight:600;color:#3c3950">Never in clear on the VPS</h3><p style="font-size:27px;line-height:1.4;color:#5f727f">National ID numbers, names, addresses, case details, attachments, OTP codes. The contact phone is the one exception, encrypted with a VPS-local key.</p></div></div><div style="display:flex;gap:24px;background:#FFFFFF;padding:34px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><x-icon name="Book" style="width:52px;height:52px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column;gap:10px;min-width:0"><h3 style="font-size:34px;font-weight:600;color:#3c3950">Logs carry no personal data</h3><p style="font-size:27px;line-height:1.4;color:#5f727f">Time, route, status code, correlation ID and a hashed phone. Never bodies, IDs, names or numbers.</p></div></div><div style="display:flex;gap:24px;background:#FFFFFF;padding:34px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><x-icon name="Chat" style="width:52px;height:52px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column;gap:10px;min-width:0"><h3 style="font-size:34px;font-weight:600;color:#3c3950">Notifications stay neutral</h3><p style="font-size:27px;line-height:1.4;color:#5f727f">The reference and a status only. No form type, no names. This matters most for the domestic violence forms.</p></div></div><div style="display:flex;gap:24px;background:#FFFFFF;padding:34px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><x-icon name="Key" style="width:52px;height:52px;color:#00838f"></x-icon><div style="flex:1;display:flex;flex-direction:column;gap:10px;min-width:0"><h3 style="font-size:34px;font-weight:600;color:#3c3950">Keys per environment</h3><p style="font-size:27px;line-height:1.4;color:#5f727f">Local, pilot, test and production each have their own key pair and secrets. The pilot key and server are destroyed before real use.</p></div></div>
+</div>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 17</p>
+<aside>Four rules that every schema follows. Retention inside the court is still an open question for the court’s legal section.</aside>
+</section>
+<section id="phases" data-transition="fade" style="background:#dfe5e8;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Plan</p>
 <h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Seven phases. Real citizen data enters only at the sixth.</h2>
 </div>
-<hr style="border-top:4px solid #00bcd4;width:1664px">
-<div style="display:flex;gap:16px">
-<div style="flex:1;display:flex;flex-direction:column;gap:12px">
-<div style="width:32px;height:32px;border-radius:50%;background:#580f41"></div>
-<h3 style="font-size:28px;font-weight:600;line-height:1.2">0 · Set-up</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">Repos, records, pilot VPS, region measured.</p>
-<p style="font-size:24px;color:#580f41;font-weight:600">In progress</p>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:20px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:26px 28px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="display:flex;gap:14px;align-items:center"><div style="width:36px;height:36px;border-radius:50%;background:#580f41;flex:none"></div><h3 style="font-size:28px;font-weight:600;color:#3c3950">0 · Set-up</h3></div><p style="font-size:25px;line-height:1.35;color:#5f727f">Repos, records, pilot VPS, region measured.</p><p style="font-size:24px;color:#580f41;font-weight:600">In progress</p></div><div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:26px 28px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="display:flex;gap:14px;align-items:center"><div style="width:36px;height:36px;border-radius:50%;background:#3c3950;flex:none"></div><h3 style="font-size:28px;font-weight:600;color:#3c3950">1 · Design</h3></div><p style="font-size:25px;line-height:1.35;color:#5f727f">Open questions, ADRs, threat model, API contract.</p><p style="font-size:24px;color:#5f727f;font-weight:600">Gate 2 pack</p></div><div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:26px 28px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="display:flex;gap:14px;align-items:center"><div style="width:36px;height:36px;border-radius:50%;background:#3c3950;flex:none"></div><h3 style="font-size:28px;font-weight:600;color:#3c3950">2 · Slice 1 build</h3></div><p style="font-size:25px;line-height:1.35;color:#5f727f">One form end to end. Madhoshi hardening in parallel.</p><p style="font-size:24px;color:#5f727f;font-weight:600">Works on the pilot VPS</p></div><div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:26px 28px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="display:flex;gap:14px;align-items:center"><div style="width:36px;height:36px;border-radius:50%;background:#3c3950;flex:none"></div><h3 style="font-size:28px;font-weight:600;color:#3c3950">3 · Pilot testing</h3></div><p style="font-size:25px;line-height:1.35;color:#5f727f">Staff and invited testers, scans, performance, accessibility.</p><p style="font-size:24px;color:#5f727f;font-weight:600">Pilot report</p></div><div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:26px 28px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="display:flex;gap:14px;align-items:center"><div style="width:36px;height:36px;border-radius:50%;background:#3c3950;flex:none"></div><h3 style="font-size:28px;font-weight:600;color:#3c3950">4 · Production ready</h3></div><p style="font-size:25px;line-height:1.35;color:#5f727f">MDS questions, Gate 1 approved, production hosting, pen test.</p><p style="font-size:24px;color:#5f727f;font-weight:600">Gates 1 to 3</p></div><div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:26px 28px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="display:flex;gap:14px;align-items:center"><div style="width:36px;height:36px;border-radius:50%;background:#00838f;flex:none"></div><h3 style="font-size:28px;font-weight:600;color:#3c3950">5 · Go-live</h3></div><p style="font-size:25px;line-height:1.35;color:#5f727f">Gate 4, MDS notified, monitoring, support.</p><p style="font-size:24px;color:#00838f;font-weight:600">First real filings</p></div><div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:26px 28px;border:1px solid #dfe5e8;border-radius:16px;min-width:0"><div style="display:flex;gap:14px;align-items:center"><div style="width:36px;height:36px;border-radius:50%;background:#3c3950;flex:none"></div><h3 style="font-size:28px;font-weight:600;color:#3c3950">6 · More forms</h3></div><p style="font-size:25px;line-height:1.35;color:#5f727f">Remaining forms as reviewed schemas; DV forms after special handling.</p><p style="font-size:24px;color:#5f727f;font-weight:600">All forms live</p></div><div style="display:flex;flex-direction:column;gap:10px;background:#3c3950;color:#f1f2f4;padding:26px 28px;border-radius:16px;min-width:0"><x-icon name="Clock" style="width:36px;height:36px;color:#4dd0e1"></x-icon><p style="font-size:24px;line-height:1.35;color:#f1f2f4"><b>Feb 2027</b> Digital Service Standards phase 1. <b>Oct 2027</b> phase 2 adds eFaas and the 4G target.</p></div>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px">
-<div style="width:32px;height:32px;border-radius:50%;background:#3c3950"></div>
-<h3 style="font-size:28px;font-weight:600;line-height:1.2">1 · Design</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">Open questions settled, ADRs, threat model, API contract, schema format.</p>
-<p style="font-size:24px;color:#5f727f">Gate 2 pack</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px">
-<div style="width:32px;height:32px;border-radius:50%;background:#3c3950"></div>
-<h3 style="font-size:28px;font-weight:600;line-height:1.2">2 · Slice 1 build</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">One form end to end. Madhoshi hardening in parallel.</p>
-<p style="font-size:24px;color:#5f727f">Works on the pilot VPS</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px">
-<div style="width:32px;height:32px;border-radius:50%;background:#3c3950"></div>
-<h3 style="font-size:28px;font-weight:600;line-height:1.2">3 · Pilot testing</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">Staff and invited testers, scans, performance from the atolls, accessibility.</p>
-<p style="font-size:24px;color:#5f727f">Pilot report</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px">
-<div style="width:32px;height:32px;border-radius:50%;background:#3c3950"></div>
-<h3 style="font-size:28px;font-weight:600;line-height:1.2">4 · Production ready</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">MDS questions, Gate 1 approved, production hosting and keys, pen test.</p>
-<p style="font-size:24px;color:#5f727f">Gates 1 to 3</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px">
-<div style="width:32px;height:32px;border-radius:50%;background:#00838f"></div>
-<h3 style="font-size:28px;font-weight:600;line-height:1.2">5 · Go-live</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">Gate 4, MDS notified, monitoring, support.</p>
-<p style="font-size:24px;color:#00838f;font-weight:600">First real filings</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px">
-<div style="width:32px;height:32px;border-radius:50%;background:#3c3950"></div>
-<h3 style="font-size:28px;font-weight:600;line-height:1.2">6 · More forms</h3>
-<p style="font-size:24px;line-height:1.35;color:#5f727f">Remaining forms as reviewed schemas. Domestic violence forms after special handling.</p>
-<p style="font-size:24px;color:#5f727f">All forms live</p>
-</div>
-</div>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;gap:20px;background:#FFFFFF;padding:24px 32px;border-radius:16px;align-items:center">
-<x-icon name="Clock" style="width:40px;height:40px;color:#580f41"></x-icon>
-<p style="font-size:25px;line-height:1.35;color:#3c3950"><b>February 2027</b> · Digital Service Standards phase 1 in force: user research, accessibility, feedback, uptime.</p>
-</div>
-<div style="flex:1;display:flex;gap:20px;background:#FFFFFF;padding:24px 32px;border-radius:16px;align-items:center">
-<x-icon name="Clock" style="width:40px;height:40px;color:#580f41"></x-icon>
-<p style="font-size:25px;line-height:1.35;color:#3c3950"><b>October 2027</b> · Phase 2 adds eFaas and the 4G performance target. The eFaas release should land before this.</p>
-</div>
-</div>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 14 · Dates are to be fixed; the order is not</p>
-<aside>No dates on the phases yet; they depend on the decisions today and on approvers being named. The two external dates are fixed by MDS. The one hard sequencing rule: Madhoshi hardening finishes before slice 1 goes live, because Madhoshi will hold the private key.</aside>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 18 · Dates are to be fixed; the order is not</p>
+<aside>No dates on the phases yet; they depend on the design phase being scoped. The two external dates are fixed by MDS. The one hard sequencing rule: Madhoshi hardening finishes before slice 1 goes live, because Madhoshi will hold the private key.</aside>
 </section>
-<section id="decisions" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<section id="decisions" data-transition="fade" style="background:#f1f2f4;color:#3c3950;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px 176px;display:flex;flex-direction:column;gap:36px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Progress</p>
+<p style="font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#00838f;font-weight:600">Progress</p>
 <h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1">Where the work stands today</h2>
 </div>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:40px;border-top:6px solid #00838f;border-radius:0 0 16px 16px">
-<div style="display:flex;gap:16px;align-items:center"><x-icon name="CheckCircle" style="width:40px;height:40px;color:#00838f"></x-icon><h3 style="font-size:34px;font-weight:600;color:#00838f">Done · October 2026</h3></div>
-<ul style="font-size:25px;line-height:1.45;color:#5f727f;padding:0 0 0 32px">
-<li>Project records and MDS gate structure set up</li>
-<li>Architecture decided: sealed filings, outbound-only court, decryption in Madhoshi</li>
-<li>Citizen access decided: form key and SMS code, no sign-in</li>
-<li>Design documents for the public service and the integration layer</li>
-<li>Prototype evaluated; its 17 form specifications kept</li>
+<div style="display:flex;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:18px;background:#FFFFFF;color:#3c3950;padding:36px;border-top:6px solid #00838f;border-radius:0 0 16px 16px;min-width:0"><div style="display:flex;gap:14px;align-items:center"><x-icon name="CheckCircle" style="width:40px;height:40px;color:#00838f"></x-icon><h3 style="font-size:32px;font-weight:600;color:#00838f">Done · October 2026</h3></div><ul style="font-size:26px;line-height:1.4;color:#5f727f;padding:0 0 0 34px">
+<li>Project records and MDS gate structure</li>
+<li>Architecture decided: sealed, outbound-only, decrypted in Madhoshi</li>
+<li>Citizen access decided: form key and SMS code</li>
+<li>Design documents for the public service and fc-api</li>
+<li>Prototype evaluated; 17 form specs kept</li>
 <li>Pilot hosting chosen; SMS route confirmed</li>
-</ul>
+</ul></div><div style="flex:1;display:flex;flex-direction:column;gap:18px;background:#FFFFFF;color:#3c3950;padding:36px;border-top:6px solid #580f41;border-radius:0 0 16px 16px;min-width:0"><div style="display:flex;gap:14px;align-items:center"><x-icon name="Clock" style="width:40px;height:40px;color:#580f41"></x-icon><h3 style="font-size:32px;font-weight:600;color:#580f41">In progress</h3></div><ul style="font-size:26px;line-height:1.4;color:#5f727f;padding:0 0 0 34px">
+<li>Pilot server region, by measured speed</li>
+<li>Gate 1 papers in draft</li>
+<li>Inventory of the court’s data sources</li>
+<li>Confirming the technology choices in this deck</li>
+</ul></div><div style="flex:1;display:flex;flex-direction:column;gap:18px;background:#3c3950;color:#f1f2f4;padding:36px;border-top:6px solid #4dd0e1;border-radius:0 0 16px 16px;min-width:0"><div style="display:flex;gap:14px;align-items:center"><x-icon name="PaperPlane" style="width:40px;height:40px;color:#4dd0e1"></x-icon><h3 style="font-size:32px;font-weight:600;color:#4dd0e1">Next</h3></div><ul style="font-size:26px;line-height:1.4;color:#c5cad6;padding:0 0 0 34px">
+<li>Design phase: API contract, schema format, threat model, key plan</li>
+<li>One form end to end on the pilot server; Madhoshi hardening</li>
+<li>Pilot testing with staff, made-up data only</li>
+<li>MDS gates and production hosting before any real filing</li>
+</ul></div>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:40px;border-top:6px solid #580f41;border-radius:0 0 16px 16px">
-<div style="display:flex;gap:16px;align-items:center"><x-icon name="Clock" style="width:40px;height:40px;color:#580f41"></x-icon><h3 style="font-size:34px;font-weight:600;color:#580f41">In progress</h3></div>
-<ul style="font-size:26px;line-height:1.5;color:#5f727f;padding:0 0 0 32px">
-<li>Pilot server: choosing the region by measured speed from Dhiraagu and Ooredoo</li>
-<li>Gate 1 papers in draft: business case, scope, risk register, data classification</li>
-<li>Inventory of the court’s data sources for the integration layer</li>
-<li>Confirming the technology choices shown in this deck</li>
-</ul>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#3c3950;color:#f1f2f4;padding:40px;border-top:6px solid #4dd0e1;border-radius:0 0 16px 16px">
-<div style="display:flex;gap:16px;align-items:center"><x-icon name="PaperPlane" style="width:40px;height:40px;color:#4dd0e1"></x-icon><h3 style="font-size:34px;font-weight:600;color:#4dd0e1">Next</h3></div>
-<ul style="font-size:26px;line-height:1.5;color:#c5cad6;padding:0 0 0 32px">
-<li>Design phase: API contract, form schema format, threat model, key plan</li>
-<li>Build one form end to end on the pilot server; harden Madhoshi in parallel</li>
-<li>Pilot testing with staff and invited testers, made-up data only</li>
-<li>Then the MDS gates and production hosting before any real filing</li>
-</ul>
-</div>
-</div>
-<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 15</p>
+<p style="position:absolute;left:160px;bottom:72px;font-size:24px;color:#5f727f">Family Court eForms · 28 October 2026 · 19</p>
 <aside>Progress in three columns. Everything in the first column is written down in the project records and can be read. The middle column is this month’s work. The right column is the order of what follows; dates come once the design phase is scoped.</aside>
 </section>
-<section id="close" data-transition="fade" style="background:#3c3950;color:#f1f2f4;font-family:'Open Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between">
+<section id="close" data-transition="fade" style="background:#3c3950;color:#f1f2f4;font-family:'Open Sans', Arial, sans-serif;padding:144px 160px;display:flex;flex-direction:column;justify-content:space-between">
 <div style="display:flex;flex-direction:column;gap:24px">
-<p style="font-size:28px;letter-spacing:4px;text-transform:uppercase;color:#4dd0e1;font-weight:600">Three things to take away</p>
-<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:72px;font-weight:800;line-height:1.15;width:1600px">Citizens file online. The court network stays closed. Nothing readable ever sits on the public server.</h2>
+<p style="font-size:30px;letter-spacing:4px;text-transform:uppercase;color:#4dd0e1;font-weight:600">Three things to take away</p>
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-size:68px;font-weight:800;line-height:1.15;width:1600px">Citizens file online. The court network stays closed. Nothing readable ever sits on the public server.</h2>
 </div>
 <div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;border-top:3px solid #4dd0e1;padding:24px 0 0 0">
-<p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#4dd0e1;font-weight:600">Protection</p>
-<p style="font-size:28px;line-height:1.35">Filings are sealed the moment they arrive and opened only inside the court, in Madhoshi. The court pulls; the internet never pushes in.</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;border-top:3px solid #4dd0e1;padding:24px 0 0 0">
-<p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#4dd0e1;font-weight:600">Built in house</p>
-<p style="font-size:28px;line-height:1.35">On what the court already runs: Go like Madhoshi, Next.js like Aailaa, few dependencies, court-owned code with full history.</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;border-top:3px solid #d7a3c5;padding:24px 0 0 0">
-<p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#d7a3c5;font-weight:600">Step by step</p>
-<p style="font-size:28px;line-height:1.35">A testing pilot with made-up data first. One form end to end. Real filings only after the MDS gates are passed.</p>
-</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border-top:3px solid #4dd0e1;padding:24px 0 0 0;min-width:0"><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#4dd0e1;font-weight:600">Protection</p><p style="font-size:29px;line-height:1.35;color:#f1f2f4">Filings are sealed the moment they arrive and opened only inside the court, in Madhoshi. The court pulls; the internet never pushes in.</p></div><div style="flex:1;display:flex;flex-direction:column;gap:12px;border-top:3px solid #4dd0e1;padding:24px 0 0 0;min-width:0"><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#4dd0e1;font-weight:600">Built in house</p><p style="font-size:29px;line-height:1.35;color:#f1f2f4">On what the court already runs: Go like Madhoshi, Next.js like Aailaa, few dependencies, court-owned code with full history.</p></div><div style="flex:1;display:flex;flex-direction:column;gap:12px;border-top:3px solid #d7a3c5;padding:24px 0 0 0;min-width:0"><p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#d7a3c5;font-weight:600">Step by step</p><p style="font-size:29px;line-height:1.35;color:#f1f2f4">A testing pilot with made-up data first. One form end to end. Real filings only after the MDS gates are passed.</p></div>
 </div>
 <div style="display:flex;justify-content:space-between;align-items:end">
-<div style="display:flex;gap:32px;align-items:baseline"><p style="font-size:32px;font-weight:600">Questions</p><p style="font-family:'Dhanbumaa', 'MV Boli', serif;font-size:36px;color:#c5cad6;line-height:1.2">ޝުކުރިއްޔާ</p></div>
+<div style="display:flex;gap:32px;align-items:baseline"><p style="font-size:34px;font-weight:600">Questions</p><p style="font-family:'Dhanbumaa', 'MV Boli', serif;font-size:38px;color:#c5cad6;line-height:1.2">ޝުކުރިއްޔާ</p></div>
 <p style="font-size:26px;color:#c5cad6">Records: fc-eforms-project · design: fc-eforms/docs, fc-api/docs</p>
 </div>
 <aside>Close on the three takeaways: protection by design, built in house on what the court already runs, and a careful step-by-step path with a pilot before any real filing. Then questions.</aside>
@@ -628,7 +391,7 @@ aside { display:none; }
 <div id="hud">← → navigate · N notes · F fullscreen · <span id="pos"></span></div>
 <script>
 (function () {
-  var ICONS = {"Lock": "<rect x=\"4\" y=\"11\" width=\"16\" height=\"10\" rx=\"2\"/><path d=\"M8 11V7a4 4 0 0 1 8 0v4\"/>", "Globe": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18\"/>", "GraduationCap": "<path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6\"/>", "Users": "<circle cx=\"9\" cy=\"8\" r=\"3.5\"/><path d=\"M2.5 20a6.5 6.5 0 0 1 13 0\"/><circle cx=\"17\" cy=\"9\" r=\"3\"/><path d=\"M15.5 14.5a5 5 0 0 1 6 5\"/>", "Database": "<ellipse cx=\"12\" cy=\"5\" rx=\"8\" ry=\"3\"/><path d=\"M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3\"/>", "Key": "<circle cx=\"8\" cy=\"14\" r=\"4.5\"/><path d=\"M11.5 10.5L20 2M16 6l3 3M13.5 8.5l3 3\"/>", "CheckCircle": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M7.5 12.5l3 3 6-7\"/>", "Book": "<path d=\"M4 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z\"/>", "Check": "<path d=\"M4 12.5l5 5L20 6.5\"/>", "Warning": "<path d=\"M12 3l10 18H2z\"/><path d=\"M12 10v5M12 18.5v.5\"/>", "Clock": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7v5l3.5 2\"/>", "PaperPlane": "<path d=\"M21 3L3 10.5l7.5 3L13.5 21z\"/><path d=\"M10.5 13.5L21 3\"/>"};
+  var ICONS = {"Lock": "<rect x=\"4\" y=\"11\" width=\"16\" height=\"10\" rx=\"2\"/><path d=\"M8 11V7a4 4 0 0 1 8 0v4\"/>", "Globe": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18\"/>", "GraduationCap": "<path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6\"/>", "Users": "<circle cx=\"9\" cy=\"8\" r=\"3.5\"/><path d=\"M2.5 20a6.5 6.5 0 0 1 13 0\"/><circle cx=\"17\" cy=\"9\" r=\"3\"/><path d=\"M15.5 14.5a5 5 0 0 1 6 5\"/>", "Database": "<ellipse cx=\"12\" cy=\"5\" rx=\"8\" ry=\"3\"/><path d=\"M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3\"/>", "Key": "<circle cx=\"8\" cy=\"14\" r=\"4.5\"/><path d=\"M11.5 10.5L20 2M16 6l3 3M13.5 8.5l3 3\"/>", "CheckCircle": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M7.5 12.5l3 3 6-7\"/>", "Book": "<path d=\"M4 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z\"/>", "Check": "<path d=\"M4 12.5l5 5L20 6.5\"/>", "Warning": "<path d=\"M12 3l10 18H2z\"/><path d=\"M12 10v5M12 18.5v.5\"/>", "Clock": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7v5l3.5 2\"/>", "Chat": "<path d=\"M4 5h16v11H9l-5 4z\"/>", "PaperPlane": "<path d=\"M21 3L3 10.5l7.5 3L13.5 21z\"/><path d=\"M10.5 13.5L21 3\"/>"};
   document.querySelectorAll('x-icon').forEach(function (el) {
     var p = ICONS[el.getAttribute('name')] || '';
     el.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + p + '</svg>';
